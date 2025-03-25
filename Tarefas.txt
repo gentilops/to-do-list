@@ -1,0 +1,34 @@
+PARA NÃO ESQUECER
+
+addTask():
+
+- Adiciona uma nova tarefa na lista.
+- Verifica se o campo foi preenchido ou está em branco.
+- Cria um novo <li> com o texto da tarefa e um botão para removê-la.
+- Salva a lista atualizada no localStorage.
+
+removeTask(button):
+
+- Remove o <li> correspondente ao botão clicado.
+- Atualiza o localStorage após a remoção.
+
+toggleTask(span):
+
+- Alterna a classe no texto da tarefa (adiciona ou remove).
+- Atualiza o localStorage para mostrar se a tarefa foi completada ou não.
+
+saveTasks():
+
+- Salva todas as tarefas no localStorage como um array de objetos JSON.
+- Cada objeto contém o texto da tarefa e seu status (completa ou não).
+
+loadTasks():
+
+- Carrega as tarefas salvas no localStorage ao abrir a página.
+- Cria itens <li> para cada tarefa salva e os adiciona à lista.
+
+Como Funciona o localStorage:
+
+- O localStorage armazena dados no navegador do usuário, mesmo se fechar a página.
+- As tarefas são salvas como um array de objetos JSON.
+- Ao carregar a página, o loadTasks() recupera os dados e recria a lista.
